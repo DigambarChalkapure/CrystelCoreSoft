@@ -65,7 +65,7 @@ export function Navbar({ routes, action }) {
       <div className="container mx-auto flex items-center justify-between text-white">
         <Link to="/">
           <div className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
-            <img src="public/img/crystalcore-high-resolution-logo-transparent.png" className="logo-img  h-16" alt="Logo" />
+            <img src="/img/crystalcore-high-resolution-logo-transparent.png" className="logo-img  h-16" alt="Logo" />
           </div>
 
         </Link>

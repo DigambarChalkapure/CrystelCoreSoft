@@ -10,6 +10,7 @@ import {
   Textarea,
   Checkbox,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 import { FingerPrintIcon, UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
@@ -20,7 +21,7 @@ export function Home() {
     <>
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
         <video className="absolute top-0 left-0 h-full w-full object-cover" autoPlay loop muted>
-          <source src="public\videos\background.mp4" type="video/mp4" />
+          <source src="\videos\background.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
@@ -38,7 +39,11 @@ export function Home() {
               Empowering businesses with innovative software solutions. We deliver cutting-edge technology and custom software development to help your business thrive in the digital age.
         
               </Typography>
-              <Button variant="filled" className="bg-red-700 mt-10 ">Let's Discuss</Button>
+              <Link to="/sign-up">
+              <Button variant="filled" className="bg-red-700 mt-10">
+                Let's Discuss
+              </Button>
+            </Link>
             </div>
             
           </div>
